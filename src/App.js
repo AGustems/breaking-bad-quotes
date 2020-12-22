@@ -34,7 +34,7 @@ function App() {
   }, [])
 
   const getDataAPI = async () => {
-    const api = await fetch('http://breaking-bad-quotes.herokuapp.com/v1/quotes')
+    const api = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes')
     const quote = await api.json();
     setQuote(quote[0])
   }
